@@ -19,6 +19,14 @@ INSTALL(
     DESTINATION ${libpkgdata}/pkgconfig
 )
 INSTALL(
+    FILES ${CMAKE_CURRENT_SOURCE_DIR}/include/termios.h
+    DESTINATION ${incldir}
+)
+INSTALL(
+    FILES ${CMAKE_CURRENT_SOURCE_DIR}/include/termiWin.h
+    DESTINATION ${incldir}
+)
+INSTALL(
     TARGETS termiwin
     DESTINATION ${libpkgdata}
 )
