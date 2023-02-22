@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libpkgdata@
+includedir=@incldir@
+
+Name: libtermiwin
+Description: termiWin: a termios porting for Windows
+Version: @VERSION@
+Libs: -L${libdir} -ltermiwin
+Cflags: -I${includedir}
