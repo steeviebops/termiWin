@@ -18,6 +18,10 @@ INSTALL(
     FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/libtermiwin.pc
     DESTINATION ${libpkgdata}/pkgconfig
 )
+INSTALL(
+    TARGETS termiwin
+    DESTINATION ${libpkgdata}
+)
 
 if (TERMIWIN_DONOTREDEFINE)
 	target_compile_definitions(termiwin PUBLIC "-DTERMIWIN_DONOTREDEFINE")
