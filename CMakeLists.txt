@@ -9,6 +9,8 @@ set (MAIN_INC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/")
 set (libpkgdata \${prefix}/lib)
 set (incldir \${prefix}/include)
 
+set_source_files_properties(src/termiWin.c PROPERTIES COMPILE_OPTIONS "-Wno-error=incompatible-pointer-types")
+
 add_library(termiwin STATIC "src/termiWin.c")
 target_include_directories(termiwin PUBLIC "include")
 
