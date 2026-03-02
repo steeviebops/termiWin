@@ -51,19 +51,19 @@
 #define select select_serial
 #endif
 
-#if !defined(SSIZE_MAX)
+//#if !defined(SSIZE_MAX)
 // ssize_t
-#if SIZE_MAX == UINT_MAX
-typedef int ssize_t;        /* common 32 bit case */
-#define SSIZE_MAX  INT_MAX
-#elif SIZE_MAX == ULONG_MAX
-typedef long ssize_t;       /* linux 64 bits */
-#define SSIZE_MAX  LONG_MAX
-#elif SIZE_MAX == ULLONG_MAX
-typedef long long ssize_t;  /* windows 64 bits */
-#define SSIZE_MAX  LLONG_MAX
-#endif
-#endif
+//#if SIZE_MAX == UINT_MAX
+//typedef int ssize_t;        /* common 32 bit case */
+//#define SSIZE_MAX  INT_MAX
+//#elif SIZE_MAX == ULONG_MAX
+//typedef long ssize_t;       /* linux 64 bits */
+//#define SSIZE_MAX  LONG_MAX
+//#elif SIZE_MAX == ULLONG_MAX
+//typedef long long ssize_t;  /* windows 64 bits */
+//#define SSIZE_MAX  LLONG_MAX
+//#endif
+//#endif
 
 //Serial options - Linux -> Windows
 
